@@ -5,7 +5,7 @@ const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 const face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 face.setAttribute("viewBox", "0 0 200 200");
 face.setAttribute("role", "img");
-face.setAttribute("aria-label", "A neutral face");
+face.setAttribute("aria-label", "A Bearded Face");
 
 const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
 head.setAttribute("cx", "100");
@@ -57,6 +57,27 @@ mouth.setAttribute("y2", "137");
 mouth.setAttribute("stroke", "#302c29");
 mouth.setAttribute("stroke-width", "4");
 mouth.setAttribute("stroke-linecap", "round");
+
+for (let row = 0; row < 9; row++) {
+  for (let col = 0; col < 16; col++) {
+    if (0 < row && row < 3 && col > 4 && col < 11) {
+      continue;
+    }
+
+    const stubble = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle",
+    );
+
+    stubble.setAttribute("cx", String(25 + col * 10));
+    stubble.setAttribute("cy", String(125 + row * 10));
+    stubble.setAttribute("r", "5");
+    stubble.setAttribute("fill", "#612A00");
+
+    face.append(stubble);
+  }
+}
+
 face.append(mouth);
 
 portrait.append(face);
