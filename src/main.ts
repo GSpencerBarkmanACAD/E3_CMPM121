@@ -1,3 +1,9 @@
+// @deno-types="./asset-url.d.ts"
+import crownUrl from "./assets/crown.png?no-inline";
+
+// @deno-types="./asset-url.d.ts"
+import stacheUrl from "./assets/stache.png?no-inline";
+
 const portrait = document.querySelector<HTMLDivElement>("#portrait")!;
 const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 
@@ -5,7 +11,7 @@ const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 const face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 face.setAttribute("viewBox", "0 0 200 200");
 face.setAttribute("role", "img");
-face.setAttribute("aria-label", "A neutral face");
+face.setAttribute("aria-label", "A Face with a Mustache and Crown");
 
 const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
 head.setAttribute("cx", "100");
@@ -58,6 +64,42 @@ mouth.setAttribute("stroke", "#302c29");
 mouth.setAttribute("stroke-width", "4");
 mouth.setAttribute("stroke-linecap", "round");
 face.append(mouth);
+
+//https://www.rawpixel.com/image/6479719/png-sticker-public-domain
+
+const mustache = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+mustache.setAttribute("href", stacheUrl);
+mustache.setAttribute("x", "60");
+mustache.setAttribute("y", "85");
+mustache.setAttribute("width", "75");
+mustache.setAttribute("height", "75");
+face.append(mustache);
+
+//https://www.rawpixel.com/image/6479691/png-sticker-public-domain
+
+const crown = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+crown.setAttribute("href", crownUrl);
+crown.setAttribute("x", "60");
+crown.setAttribute("y", "-5");
+crown.setAttribute("width", "75");
+crown.setAttribute("height", "75");
+face.append(crown);
+
+/*
+
+Personal usage licence
+IMPORTANT: This Personal Licence is only granted for non-Watermarked Images/designs downloaded from rawpixel.com.
+
+This Personal Licence is granted to personal members with a:
+Free Membership Plan for use with ALL Images from our Free Image Collection;
+Creative Membership plan or a Lifetime Membership plan for use with ALL images from our Free and Premium Image Collections.
+*/
 
 portrait.append(face);
 
