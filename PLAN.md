@@ -11,3 +11,7 @@ I plan on placing a picture of crown upon their head, and a cartoony, large must
 ## C) Color and Curves:
 
 I will use a Bezier curve to represent a frown, turning a smile upside down, and applying a gradient up from cool to warmer/dark red, making it look like the face is very angry. I want this one to look like a simple emote for people to use or display in a potential app.
+
+## Criteria:
+
+I will choose the portrait that most clearly displays its intended purpose, while looking inline with the relatively simplistic style.
