@@ -1,4 +1,4 @@
-### E3 - Feature Branches [EXPLORED]
+# E3 - Feature Branches [EXPLORED]
 
 ## A) Geometry: Explored
 
@@ -12,11 +12,13 @@ I plan on placing a picture of crown upon their head, and a cartoony, large must
 
 - The crown and mustache images were easy enough to find, but I could not get the crown to sit on top of the head image properly, as it kept getting clipped out of frame. Thus, the crown just sits on his forehead, but at least it is the whole crown.
 
-## C) Color and Curves: Explored
+## C) Color and Curves: [CHOSEN BRANCH]
 
 I will use a Bezier curve to represent a frown, turning a smile upside down, and applying a gradient up from cool to warmer/dark red, making it look like the face is very angry. I want this one to look like a simple emote for people to use or display in a potential app.
 
 - The curve turned out as aspected, as did the gradient, which rises from the original yellow into hot red.
+
+### This Branch was chosen as, while probably the simplest, it was the most stylistically coherent. Very clearly gets the emotion across. I liked how my beard ended up, but would've put even more work into tapering the shape into a triangle, as they weren't available from the start. Branch B was a total failure; the image for the crown was too realistic for the face, and wouldn't sit properly on top of the head. Next time, if I were to use images, I'd draw them myself.
 
 ## Criteria:
 
